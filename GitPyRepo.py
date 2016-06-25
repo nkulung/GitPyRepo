@@ -23,12 +23,12 @@ def getRepos(un):
 def displayRepos(repo,link):
     print('')
     print('Repositories')
-    print('')
-    print('             Name                         Link')
-    
-    print('--------------------------------------------------')
+
+    print('-------------------------------------------')
     for i in range (len(repo)):
-        print('#',i+1,' ',repo[i],' ',link[i])
+        print('#',i+1, repo[i])
+        print(link[i])
+        print('')
 
 def main():
     un = getInfo()
